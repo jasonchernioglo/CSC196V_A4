@@ -1,0 +1,52 @@
+body {
+  margin: 0px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+path.line {
+  fill: none;
+}
+.line-path {
+  fill: none !important; 
+  
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  mix-blend-mode: multiply;
+}
+
+text {
+  font-family: sans-serif;
+}
+
+.tick text {
+  font-size: 0.6rem;
+  fill: #635F5D;
+}
+
+.tick line {
+  stroke: #C0C0BB;
+}
+
+.axis-label {
+  font-size: 1.5em;
+  fill: #8E8883;
+}
+
+.title {
+  font-size: 1.5em;
+  fill: #635F5D;
+}
+
+
+select{
+  margin-bottom: 8px;
+}
+
+
+#selectorContainer {
+  
+  padding: 10px 10px 10px 10px;
+}
+

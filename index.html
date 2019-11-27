@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<!-- Page Title -->
+  <title>Cryptocurrency Comparison</title>
+  <!-- Google Font CDN -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<!-- CSS Styling -->
+    <link rel="stylesheet" href="style.css">
+	<!-- Load d3.js -->
+    <script src="https://unpkg.com/d3@5.6.0/dist/d3.min.js"></script>
+  <!-- Load jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
 
+      <h1>A4 - Cryptocurrency Market Trend Analysis (Chainlink)</h2>
+      <h2>Chainlink Token Price over Time</h2>
+      <p>Comparing the PRICE of a specific token allows us to get a measure of how many people are actually buying into a specific project. This first graph displays the price of the token over time.</p>
+      <p><i>NOTE: We may later add metrics in order to compare specific projects with the DMA (Daily Moving Average) of the whole crypto market, or possibly the "TOTAL2" indicator from tradingview.com, which displays the total market capitalization of all coins excluding BTC.</i></p>
+
+
+      <!-- HIDDEN -->
+      <div id="selectorContainer" style="display: none;">
+        <!-- Coin 1 Selector -->
+        <label for="coin1Selector">1st Project: </label>
+        <select id="coin1Selector">
+         <option value="DISPLAY_ALL" selected>----</option>
+        </select>
+
+        <!-- Coin 2 Selector -->
+        <label for="coin2Selector" style="margin-left: 10px;">2nd Project: </label>
+        <select id="coin2Selector">
+         <option value="DISPLAY_ALL" selected>----</option>
+        </select>
+        </br>
+
+        <!-- Comparison Type Selector -->
+        <label for="comparisonSelect">Comparison Metric: </label>
+        <select id="comparisonSelect">
+          <option value="open">Daily Opening Price (USD)</option>
+          <option value="high">Daily High Price (USD)</option>
+          <option value="low">Daily Low Price (USD)</option>
+          <option value="close">Daily Closing Price (USD)</option>
+          <option value="volume">Daily Volume (USD)</option>
+          <option value="marketcap">Daily Market Capitalization (USD)</option>
+        </select>
+      </div>
+
+      <svg width="1000" height="500"></svg>
+
+      </br>
+      <hr />
+
+
+     <h2>Chainlink Trading Volume Analysis</h2>
+      <p>Comparing the TRADING VOLUME of a specific token allows us to get a measure of the movement of a token.  Later comparing this to the trend analysis can show us how trend rankings correlate to the movement of tokens.</p>
+    <img src="res/link_volume.png" style="width: 1000px"/>
+
+
+  </body>
+</html>
+
+<!-- D3 - Main Charting -->
+<script src="bundle.js"></script>
